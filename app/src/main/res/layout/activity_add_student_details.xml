@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="0dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btn"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Student Registration"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Personal Information Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Course"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/btn"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCourse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextSession"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Session"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Information"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/btn"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="10dp" />
+
+
+
+                    <Spinner
+                        android:id="@+id/spinnerGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp" />
+
+                    <EditText
+                        android:id="@+id/editTextFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Student Full Name"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <EditText
+                        android:id="@+id/editTextGuardianName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Guardian Name"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <EditText
+                        android:id="@+id/editTextNationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nationality"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPhysically"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Contact Information Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Information"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/btn"
+                        android:layout_marginBottom="12dp" />
+
+                    <EditText
+                        android:id="@+id/editTextMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile Number"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:inputType="phone"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <EditText
+                        android:id="@+id/editTextAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <EditText
+                        android:id="@+id/editTextCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <EditText
+                        android:id="@+id/editTextState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <EditText
+                        android:id="@+id/editTextCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Country"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Higher Secondary Certificate"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/btn"
+                        android:layout_marginBottom="10dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+                            android:text="HSC"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edtHscBoard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Board"
+                            android:layout_weight="2"
+                            android:inputType="textPersonName"
+                            android:background="@drawable/edittext_background"
+                            android:textColor="#333"
+                            android:textSize="16sp"
+                            android:drawablePadding="10dp"/>
+
+                        <EditText
+                            android:id="@+id/edtHscCGPA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="CGPA"
+                            android:inputType="numberDecimal"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+                            android:textColor="#333"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secondary School Certificate"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/btn"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+                            android:text="SSC"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edtSscBoard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Board"
+                            android:layout_weight="2"
+                            android:inputType="textPersonName"
+                            android:background="@drawable/edittext_background"
+                            android:textColor="#333"
+                            android:textSize="16sp"
+                            android:drawablePadding="10dp"/>
+
+                        <EditText
+                            android:id="@+id/edtSscCGPA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="CGPA"
+                            android:inputType="numberDecimal"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+                            android:textColor="#333"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonStudentSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rounded"
+                android:padding="14dp"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

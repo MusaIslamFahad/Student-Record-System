@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_course"
+            android:title="Course">
+            <menu>
+                <item
+                    android:id="@+id/nav_add_course"
+                    android:icon="@drawable/baseline_double_arrow_24"
+                    android:title="Add Course" />
+                <item
+                    android:id="@+id/nav_show_course"
+                    android:icon="@drawable/baseline_double_arrow_24"
+                    android:title="Manage Course" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_student"
+            android:title="Student Details">
+            <menu>
+                <item
+                    android:id="@+id/nav_add_student"
+                    android:icon="@drawable/baseline_double_arrow_24"
+                    android:title="Add Student Details" />
+                <item
+                    android:id="@+id/nav_manage_student"
+                    android:icon="@drawable/baseline_double_arrow_24"
+                    android:title="Manage Student Details" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_change_password"
+            android:title="Change Password">
+        </item>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="LogOut">
+        </item>
+    </group>
+</menu>

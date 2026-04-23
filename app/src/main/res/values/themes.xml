@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StudentRecordSystem" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/btn</item>
+    </style>
+
+    <style name="Theme.StudentRecordSystem" parent="Base.Theme.StudentRecordSystem" />
+
+    <!-- Customize the toolbar style -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorPrimary">@color/btn</item>
+        <item name="colorPrimaryDark">@color/btn</item>
+    </style>
+
+
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/btn</item>
+        <item name="hintTextColor">@color/btn</item>
+    </style>
+
+</resources>

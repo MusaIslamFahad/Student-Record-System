@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#f3e6dd</color>
+    <color name="btn">#334d68</color>
+    <color name="health_bg">#E8F5F2</color>       <!-- Soft light teal background -->
+</resources>
