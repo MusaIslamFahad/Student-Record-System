@@ -1,4 +1,28 @@
-# Student Record System
+<div align="center">
+
+  # Student Record System
+
+  **Android Student Management App**  
+  Built with Java & SQLite
+
+  [![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://android.com/)
+  [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
+  [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+  [![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)](https://developer.android.com/studio)
+  [![Material Design](https://img.shields.io/badge/Material_Design-3DDC84?style=for-the-badge)](https://material.io/)
+
+  <br/>
+
+  [![License](https://img.shields.io/github/license/MusaIslamFahad/Student-Record-System?style=for-the-badge)](LICENSE)
+  [![Stars](https://img.shields.io/github/stars/MusaIslamFahad/Student-Record-System?style=for-the-badge)](https://github.com/MusaIslamFahad/Student-Record-System/stargazers)
+  [![Forks](https://img.shields.io/github/forks/MusaIslamFahad/Student-Record-System?style=for-the-badge)](https://github.com/MusaIslamFahad/Student-Record-System/fork)
+
+  [![API](https://img.shields.io/badge/API-21%2B-brightgreen?style=for-the-badge)](https://developer.android.com/about/versions)
+  [![Platform](https://img.shields.io/badge/Platform-Android-blue?style=for-the-badge)](https://android.com/)
+
+
+</div>
+
 
 An Android application for managing student records and academic courses. Built with Java and SQLite, it provides a user-authenticated, offline-first experience for adding, viewing, editing, and deleting students and courses.
 
